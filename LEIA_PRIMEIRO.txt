@@ -1,0 +1,17 @@
+NOSSA HISTORIA — V5 (24 FOTOS)
+
+1. Extraia o ZIP todo.
+2. Abra a pasta Nossa_Historia_V5.
+3. Clique duas vezes em index.html, ou execute ABRIR_SITE_NO_NAVEGADOR.bat no Windows.
+
+GO LIVE (VS CODE)
+1. Arquivo > Abrir Pasta > selecione Nossa_Historia_V5.
+2. Instale / ative a extensao Live Server (Ritwick Dey).
+3. Se estiver em Restricted Mode, confirme Trust nesta pasta se voce confia nela.
+4. No index.html, clique com o botao direito > Open with Live Server.
+
+LEGENDAS: js/config.js > photos > edite date e caption.
+
+A secao quebrada de cartoes foi removida desta versao.
+
+Os links de "Abrir album completo" foram removidos.

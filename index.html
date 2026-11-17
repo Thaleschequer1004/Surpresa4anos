@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160b19">
+  <meta name="description" content="Um pequeno universo feito para guardar uma grande história de amor.">
+  <title>Nossa história ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body class="is-locked">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="welcome__glow welcome__glow--one"></div>
+    <div class="welcome__glow welcome__glow--two"></div>
+    <div class="welcome__card">
+      <span class="eyebrow welcome__eyebrow"><span class="mini-star">✦</span> UMA SURPRESA SÓ NOSSA <span class="mini-star">✦</span></span>
+      <div class="welcome__heart" aria-hidden="true"><span>♡</span></div>
+      <p class="welcome__date">16 DE NOVEMBRO</p>
+      <h1 id="welcomeTitle">Feliz <em>nosso dia.</em></h1>
+      <p class="welcome__description">Preparei um pedacinho da nossa história para você reviver comigo. Feito com todo o meu amor.</p>
+      <button class="button button--primary welcome__button" id="enterButton" type="button">Abrir nossa história <span aria-hidden="true">↗</span></button>
+      <p class="welcome__hint">de mim, para você <span>♡</span></p>
+    </div>
+    <div class="welcome__bottom">EST. EM UM DIA QUE MUDOU TUDO</div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">nossa<span>história</span><i>♡</i></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio" class="nav__link is-current">Início</a>
+      <a href="#linha-do-tempo" class="nav__link">Memórias</a>
+      <a href="#cartinha" class="nav__link">Uma carta</a>
+      <a href="#final" class="nav__link">Para sempre</a>
+    </nav>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-label="Ativar trilha sonora" aria-pressed="false">
+      <svg class="sound-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span id="soundLabel">Tocar trilha</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero__orb hero__orb--left" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--right" aria-hidden="true"></div>
+      <div class="hero__stars" id="heroStars" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <div class="label-line"><span class="line"></span><span>UMA HISTÓRIA DE AMOR EM CAPÍTULOS</span></div>
+          <h2>O melhor lugar do mundo <span>sempre foi</span> <em>com você.</em></h2>
+          <p class="hero__description">De todos os encontros que a vida poderia ter preparado, o nosso é o meu favorito. Esse é um pequeno universo de lembranças, feito só para nós dois.</p>
+          <div class="hero__buttons">
+            <a class="button button--primary" href="#linha-do-tempo">Reviver nossos momentos <span aria-hidden="true">↗</span></a>
+            <a class="button button--text" href="#cartinha">Tenho algo para te dizer <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero__signature"><span>com amor,</span><strong id="heroSignature">de mim pra você ♡</strong></div>
+        </div>
+        <div class="hero__art reveal" aria-label="Ilustração de uma coleção de fotografias e memórias">
+          <div class="orbit orbit--one"></div><div class="orbit orbit--two"></div>
+          <div class="hero-photo hero-photo--back"><div class="hero-photo__back-pattern">✳</div></div>
+          <div class="hero-photo hero-photo--front" id="heroPhoto"><div class="hero-photo__placeholder"><span class="hero-photo__small-star">✦</span><span class="hero-photo__heart">♡</span><span class="hero-photo__line">NÓS, EM CADA INSTANTE</span></div><div class="hero-photo__caption">meu lugar favorito é com você <span>♥</span></div></div>
+          <div class="hero-sticker hero-sticker--top">uma história<br><em>sem fim</em> ✧</div>
+          <div class="hero-sticker hero-sticker--bottom">16.11 <span>♡</span></div>
+          <div class="hero__spark hero__spark--a">✧</div><div class="hero__spark hero__spark--b">✦</div>
+        </div>
+      </div>
+      <a href="#linha-do-tempo" class="scroll-cue"><span>DESÇA PARA EXPLORAR</span><span class="scroll-cue__icon">↓</span></a>
+    </section>
+
+    <div class="love-ticker" aria-hidden="true"><div class="love-ticker__track">
+      <span>UM AMOR</span><i>✦</i><span>INFINITAS MEMÓRIAS</span><i>✦</i><span>QUATRO CAPÍTULOS</span><i>✦</i><span>NÓS DOIS</span><i>✦</i>
+      <span>UM AMOR</span><i>✦</i><span>INFINITAS MEMÓRIAS</span><i>✦</i><span>QUATRO CAPÍTULOS</span><i>✦</i><span>NÓS DOIS</span><i>✦</i>
+    </div></div>
+
+    <section class="intro-section section-pad">
+      <span class="section-kicker reveal">01 / NOSSA PEQUENA INFINITUDE</span>
+      <div class="intro-section__grid">
+        <div class="intro-section__visual reveal"><div class="intro-section__seal"><span>♡</span><small>love<br>always</small></div><div class="intro-section__swirl">✺</div></div>
+        <div class="intro-section__content reveal">
+          <h2>Algumas histórias merecem ser <em>vividas de novo.</em></h2>
+          <p>As datas, os sorrisos, os lugares, as coisas pequenas que ficaram enormes dentro da gente. Aqui, cada capítulo guarda um pouco do que construímos.</p>
+          <div class="intro-section__stats"><div><strong>04</strong><span>capítulos para explorar</span></div><div><strong>∞</strong><span>razões para celebrar</span></div><div><strong>01</strong><span>história só nossa</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section-pad" id="linha-do-tempo">
+      <div class="timeline-header reveal">
+        <span class="section-kicker">02 / NOSSA LINHA DO TEMPO</span>
+        <h2>O tempo passa. <em>O amor fica.</em></h2>
+        <p>Quatro capítulos, tantas lembranças. Escolha um ano, passe as fotos e venha reviver cada pedacinho dessa história comigo.</p>
+      </div>
+      <div class="timeline-nav" id="timelineNav" aria-label="Escolher capítulo"></div>
+      <div class="chapters" id="chapters"></div>
+      <div class="timeline-end reveal"><span>✧</span><p>E essa história ainda está só começando.</p><span>✧</span></div>
+    </section>
+
+
+    <section class="letter-section section-pad" id="cartinha">
+      <div class="letter-section__glow" aria-hidden="true"></div>
+      <div class="letter-section__heading reveal"><span class="section-kicker">03 / UMA COISA QUE EU QUERIA TE DIZER</span><h2>Algumas palavras são <em>só suas.</em></h2><p>Essa parte eu escrevi pensando em você.</p></div>
+      <div class="letter-stage reveal" id="letterStage">
+        <div class="envelope" id="envelope" aria-hidden="true"><div class="envelope__back"></div><div class="envelope__flap"></div><div class="envelope__front"></div><div class="envelope__seal">♡</div></div>
+        <button class="button button--primary letter-stage__button" id="openLetter" type="button">Abrir minha cartinha <span aria-hidden="true">↗</span></button>
+        <div class="letter-paper" id="letterPaper" aria-hidden="true"><div class="letter-paper__top">PARA O MEU AMOR <span>♡</span></div><h3 id="letterTitle">Meu amor,</h3><div id="letterParagraphs"></div><div class="letter-paper__bottom"><span>Com todo o carinho do mundo,</span><strong id="letterSignature">de mim, pra você ♡</strong></div></div>
+      </div>
+    </section>
+
+    <section class="final-section" id="final">
+      <div class="final-section__stars" aria-hidden="true"></div>
+      <div class="final-section__inner reveal"><span class="section-kicker">04 / E O MELHOR AINDA ESTÁ POR VIR</span><div class="final-section__heart">♡</div><h2>Se eu pudesse escolher de novo, <em>seria você.</em></h2><p>Em todos os capítulos. Em todos os dias. Nas próximas mil lembranças que ainda vamos criar.</p><div class="final-section__question">Topa continuar escrevendo essa história comigo?</div><div class="final-section__actions"><button class="button button--primary finale-button" type="button">Sempre! ♡</button><button class="button button--outline finale-button" type="button">Mil vezes sim ✦</button></div><p class="final-section__answer" id="finalAnswer" aria-live="polite"></p></div>
+      <div class="final-section__footer"><span>feito com todo o amor do mundo</span><span>16.11 <i>♡</i> para sempre</span></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Visualizar fotografia" aria-modal="true" aria-hidden="true"><button type="button" class="lightbox__close" id="lightboxClose" aria-label="Fechar fotografia">×</button><button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Foto anterior">‹</button><figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure><button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima foto">›</button></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
